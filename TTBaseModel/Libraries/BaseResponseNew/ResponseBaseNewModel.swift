@@ -1,6 +1,6 @@
 //
 //  ResponseBaseNewModel.swift
-//  NMBaseModel
+//  TTBaseModel
 //
 //  Created by MnzfM on 7.10.2019.
 //  Copyright © 2019 MnzfM. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  QueryAlert.swift
-//  NMBaseModel
+//  TTBaseModel
 //
 //  Created by MnzfM on 16.09.2019.
 //  Copyright © 2019 MnzfM. All rights reserved.

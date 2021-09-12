@@ -8,16 +8,212 @@
 
 /* Begin PBXBuildFile section */
 		B91EE54126EBAE090005B295 /* TTBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B91EE53F26EBAE090005B295 /* TTBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B91EE54926EBAE3F0005B295 /* BaseModels in Resources */ = {isa = PBXBuildFile; fileRef = B91EE54726EBAE3F0005B295 /* BaseModels */; };
 		B91EE54A26EBAE3F0005B295 /* Libraries in Resources */ = {isa = PBXBuildFile; fileRef = B91EE54826EBAE3F0005B295 /* Libraries */; };
+		B9E22AB926EDA20E00E2EA9A /* ResponseCheckVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AAC26EDA1E800E2EA9A /* ResponseCheckVersion.swift */; };
+		B9E22ABA26EDA20E00E2EA9A /* CheckVersionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AAD26EDA1E800E2EA9A /* CheckVersionRequest.swift */; };
+		B9E22ABC26EDA22F00E2EA9A /* CdrmPartDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9426EDA1E700E2EA9A /* CdrmPartDescription.swift */; };
+		B9E22ABD26EDA22F00E2EA9A /* DefectReportPnResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9526EDA1E700E2EA9A /* DefectReportPnResponse.swift */; };
+		B9E22ABE26EDA22F00E2EA9A /* CdrmLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9A26EDA1E700E2EA9A /* CdrmLocationResponse.swift */; };
+		B9E22ABF26EDA22F00E2EA9A /* DefectCategoryCdrmConfigResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9626EDA1E700E2EA9A /* DefectCategoryCdrmConfigResponse.swift */; };
+		B9E22AC026EDA22F00E2EA9A /* CdrmPartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9226EDA1E700E2EA9A /* CdrmPartResponse.swift */; };
+		B9E22AC126EDA22F00E2EA9A /* DefectCategoryCdrmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9B26EDA1E700E2EA9A /* DefectCategoryCdrmConfig.swift */; };
+		B9E22AC226EDA22F00E2EA9A /* DefectMel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9F26EDA1E700E2EA9A /* DefectMel.swift */; };
+		B9E22AC326EDA22F00E2EA9A /* DefectReportListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9726EDA1E700E2EA9A /* DefectReportListResponse.swift */; };
+		B9E22AC426EDA22F00E2EA9A /* DefectReportPn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9326EDA1E700E2EA9A /* DefectReportPn.swift */; };
+		B9E22AC526EDA22F00E2EA9A /* CdrmPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8E26EDA1E700E2EA9A /* CdrmPart.swift */; };
+		B9E22AC626EDA22F00E2EA9A /* DefectsAndMels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9826EDA1E700E2EA9A /* DefectsAndMels.swift */; };
+		B9E22AC726EDA22F00E2EA9A /* CdrmLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9926EDA1E700E2EA9A /* CdrmLocation.swift */; };
+		B9E22AC826EDA22F00E2EA9A /* CdrmBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9026EDA1E700E2EA9A /* CdrmBase.swift */; };
+		B9E22AC926EDA22F00E2EA9A /* DefectReportTroubleShootingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9126EDA1E700E2EA9A /* DefectReportTroubleShootingResponse.swift */; };
+		B9E22ACA26EDA22F00E2EA9A /* Defect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8D26EDA1E700E2EA9A /* Defect.swift */; };
+		B9E22ACB26EDA22F00E2EA9A /* DefectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9C26EDA1E700E2EA9A /* DefectResponse.swift */; };
+		B9E22ACC26EDA22F00E2EA9A /* CdrmDecriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9E26EDA1E700E2EA9A /* CdrmDecriptionResponse.swift */; };
+		B9E22ACD26EDA22F00E2EA9A /* DefectMelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8F26EDA1E700E2EA9A /* DefectMelResponse.swift */; };
+		B9E22ACE26EDA22F00E2EA9A /* DefectReportTroubleShooting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A9D26EDA1E700E2EA9A /* DefectReportTroubleShooting.swift */; };
+		B9E22AD026EDA26100E2EA9A /* DTSCustomerWoResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AB126EDA1E800E2EA9A /* DTSCustomerWoResponseModel.swift */; };
+		B9E22AD126EDA26100E2EA9A /* DTSPdfRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AB426EDA1E800E2EA9A /* DTSPdfRequestModel.swift */; };
+		B9E22AD226EDA26100E2EA9A /* DTSArchiveRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AAF26EDA1E800E2EA9A /* DTSArchiveRequestModel.swift */; };
+		B9E22AD326EDA26100E2EA9A /* DTSWorkOrderStampCountsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AB026EDA1E800E2EA9A /* DTSWorkOrderStampCountsResponseModel.swift */; };
+		B9E22AD426EDA26100E2EA9A /* DTSTaskCardListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AB626EDA1E800E2EA9A /* DTSTaskCardListResponseModel.swift */; };
+		B9E22AD526EDA26100E2EA9A /* DTSArchiveResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AB326EDA1E800E2EA9A /* DTSArchiveResponseModel.swift */; };
+		B9E22AD626EDA26100E2EA9A /* DTSPdfResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AB526EDA1E800E2EA9A /* DTSPdfResponseModel.swift */; };
+		B9E22AD726EDA26100E2EA9A /* DTSTaskCardStampRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AB726EDA1E800E2EA9A /* DTSTaskCardStampRequestModel.swift */; };
+		B9E22AD826EDA26100E2EA9A /* DTSTaskCardListRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AB826EDA1E800E2EA9A /* DTSTaskCardListRequestModel.swift */; };
+		B9E22AD926EDA26100E2EA9A /* DTSSmsCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AB226EDA1E800E2EA9A /* DTSSmsCodeModel.swift */; };
+		B9E22ADB26EDA28700E2EA9A /* PnMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AAA26EDA1E800E2EA9A /* PnMaster.swift */; };
+		B9E22ADC26EDA28700E2EA9A /* InventorySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AA926EDA1E800E2EA9A /* InventorySummary.swift */; };
+		B9E22ADD26EDA28700E2EA9A /* InventoryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AA826EDA1E800E2EA9A /* InventoryDetail.swift */; };
+		B9E22ADE26EDA28700E2EA9A /* InventoryControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AA726EDA1E800E2EA9A /* InventoryControl.swift */; };
+		B9E22AE026EDA2AC00E2EA9A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6326EDA1E700E2EA9A /* UserModel.swift */; };
+		B9E22AE126EDA2AC00E2EA9A /* UserAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6526EDA1E700E2EA9A /* UserAuthResponse.swift */; };
+		B9E22AE226EDA2AC00E2EA9A /* ProfilePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6426EDA1E700E2EA9A /* ProfilePhoto.swift */; };
+		B9E22AE326EDA2AC00E2EA9A /* UMSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6026EDA1E700E2EA9A /* UMSModel.swift */; };
+		B9E22AE426EDA2AC00E2EA9A /* UserAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6126EDA1E700E2EA9A /* UserAuthRequest.swift */; };
+		B9E22AE526EDA2AC00E2EA9A /* RequestUserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6226EDA1E700E2EA9A /* RequestUserLogin.swift */; };
+		B9E22AE626EDA2AC00E2EA9A /* ResponseUserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5F26EDA1E700E2EA9A /* ResponseUserLogin.swift */; };
+		B9E22AE826EDA2C600E2EA9A /* SegmentsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AA126EDA1E800E2EA9A /* SegmentsRequest.swift */; };
+		B9E22AE926EDA2C600E2EA9A /* CreateOrStartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AA426EDA1E800E2EA9A /* CreateOrStartRequest.swift */; };
+		B9E22AEA26EDA2C600E2EA9A /* SmallRequestNV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AA526EDA1E800E2EA9A /* SmallRequestNV.swift */; };
+		B9E22AEB26EDA2C600E2EA9A /* SmallRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AA326EDA1E800E2EA9A /* SmallRequest.swift */; };
+		B9E22AEC26EDA2C600E2EA9A /* SegmentItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22AA226EDA1E800E2EA9A /* SegmentItemRequest.swift */; };
+		B9E22AEE26EDA2EB00E2EA9A /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8726EDA1E700E2EA9A /* Skill.swift */; };
+		B9E22AEF26EDA2EB00E2EA9A /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8326EDA1E700E2EA9A /* Section.swift */; };
+		B9E22AF026EDA2EB00E2EA9A /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8426EDA1E700E2EA9A /* LocationResponse.swift */; };
+		B9E22AF126EDA2EB00E2EA9A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7726EDA1E700E2EA9A /* Location.swift */; };
+		B9E22AF226EDA2EB00E2EA9A /* ChapterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7826EDA1E700E2EA9A /* ChapterResponse.swift */; };
+		B9E22AF326EDA2EB00E2EA9A /* TranCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8126EDA1E700E2EA9A /* TranCode.swift */; };
+		B9E22AF426EDA2EB00E2EA9A /* SkillResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7D26EDA1E700E2EA9A /* SkillResponse.swift */; };
+		B9E22AF526EDA2EB00E2EA9A /* TranCodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7926EDA1E700E2EA9A /* TranCodeResponse.swift */; };
+		B9E22AF626EDA2EB00E2EA9A /* LocationResponseRem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8026EDA1E700E2EA9A /* LocationResponseRem.swift */; };
+		B9E22AF726EDA2EB00E2EA9A /* SectionResponseN.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7A26EDA1E700E2EA9A /* SectionResponseN.swift */; };
+		B9E22AF826EDA2EB00E2EA9A /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8626EDA1E700E2EA9A /* Chapter.swift */; };
+		B9E22AF926EDA2EB00E2EA9A /* DeviceToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8526EDA1E700E2EA9A /* DeviceToken.swift */; };
+		B9E22AFA26EDA2EB00E2EA9A /* ChapterResponseN.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7F26EDA1E700E2EA9A /* ChapterResponseN.swift */; };
+		B9E22AFB26EDA2EB00E2EA9A /* SkillResponseN.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7B26EDA1E700E2EA9A /* SkillResponseN.swift */; };
+		B9E22AFC26EDA2EB00E2EA9A /* SectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7E26EDA1E700E2EA9A /* SectionResponse.swift */; };
+		B9E22AFD26EDA2EB00E2EA9A /* TranCodeResponseN.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7C26EDA1E700E2EA9A /* TranCodeResponseN.swift */; };
+		B9E22AFE26EDA2EB00E2EA9A /* WorkAreaResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8226EDA1E700E2EA9A /* WorkAreaResponseModel.swift */; };
+		B9E22AFF26EDA2EF00E2EA9A /* AcMasterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7426EDA1E700E2EA9A /* AcMasterResponse.swift */; };
+		B9E22B0026EDA2EF00E2EA9A /* ACResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7326EDA1E700E2EA9A /* ACResponse.swift */; };
+		B9E22B0126EDA2EF00E2EA9A /* AirCraftResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7226EDA1E700E2EA9A /* AirCraftResponse.swift */; };
+		B9E22B0226EDA2EF00E2EA9A /* AcMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A7526EDA1E700E2EA9A /* AcMaster.swift */; };
+		B9E22B0326EDA2F200E2EA9A /* EmployeeResponseN.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8B26EDA1E700E2EA9A /* EmployeeResponseN.swift */; };
+		B9E22B0426EDA2F200E2EA9A /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8A26EDA1E700E2EA9A /* Employee.swift */; };
+		B9E22B0526EDA2F200E2EA9A /* EmployeeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A8926EDA1E700E2EA9A /* EmployeeResponse.swift */; };
+		B9E22B0726EDA31800E2EA9A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5A26EDA1E700E2EA9A /* Item.swift */; };
+		B9E22B0826EDA31800E2EA9A /* ProgressStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5C26EDA1E700E2EA9A /* ProgressStatus.swift */; };
+		B9E22B0926EDA31800E2EA9A /* RosterSegmentTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5926EDA1E700E2EA9A /* RosterSegmentTypes.swift */; };
+		B9E22B0A26EDA31800E2EA9A /* RosterRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5B26EDA1E700E2EA9A /* RosterRequestType.swift */; };
+		B9E22B0B26EDA31800E2EA9A /* DepartmanListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5626EDA1E700E2EA9A /* DepartmanListResponse.swift */; };
+		B9E22B0C26EDA31800E2EA9A /* AcRosterDocPathResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5826EDA1E700E2EA9A /* AcRosterDocPathResponse.swift */; };
+		B9E22B0D26EDA31800E2EA9A /* SlotListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5526EDA1E700E2EA9A /* SlotListResponse.swift */; };
+		B9E22B0E26EDA31800E2EA9A /* SegmentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5D26EDA1E700E2EA9A /* SegmentsResponse.swift */; };
+		B9E22B0F26EDA31800E2EA9A /* PlannedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5726EDA1E700E2EA9A /* PlannedItem.swift */; };
+		B9E22B1126EDA33000E2EA9A /* ManHourRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6B26EDA1E700E2EA9A /* ManHourRequest.swift */; };
+		B9E22B1226EDA33000E2EA9A /* WorkAccompResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6E26EDA1E700E2EA9A /* WorkAccompResponse.swift */; };
+		B9E22B1326EDA33000E2EA9A /* WoTaskcardCoreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6726EDA1E700E2EA9A /* WoTaskcardCoreResponse.swift */; };
+		B9E22B1426EDA33000E2EA9A /* WorkAccompRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6826EDA1E700E2EA9A /* WorkAccompRequest.swift */; };
+		B9E22B1526EDA33000E2EA9A /* ManHourResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6C26EDA1E700E2EA9A /* ManHourResponse.swift */; };
+		B9E22B1626EDA33000E2EA9A /* WoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6A26EDA1E700E2EA9A /* WoResponse.swift */; };
+		B9E22B1726EDA33000E2EA9A /* WorkOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6D26EDA1E700E2EA9A /* WorkOrderResponse.swift */; };
+		B9E22B1826EDA33000E2EA9A /* WoTaskCardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6F26EDA1E700E2EA9A /* WoTaskCardResponse.swift */; };
+		B9E22B1926EDA33000E2EA9A /* NRTCRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A6926EDA1E700E2EA9A /* NRTCRequest.swift */; };
+		B9E22B1B26EDA34A00E2EA9A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5126EDA1E100E2EA9A /* BaseViewModel.swift */; };
+		B9E22B1C26EDA34B00E2EA9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5026EDA1E100E2EA9A /* Constants.swift */; };
+		B9E22B1D26EDA34B00E2EA9A /* APIGatewayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5326EDA1E100E2EA9A /* APIGatewayService.swift */; };
+		B9E22B1E26EDA34B00E2EA9A /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A5226EDA1E100E2EA9A /* BaseModel.swift */; };
+		B9E22B2026EDA36000E2EA9A /* AcUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A4B26EDA1CD00E2EA9A /* AcUnit.swift */; };
+		B9E22B2126EDA36000E2EA9A /* AcUnitTypeTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A4C26EDA1CD00E2EA9A /* AcUnitTypeTransaction.swift */; };
+		B9E22B2226EDA36000E2EA9A /* AcActualFlightResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A4926EDA1CD00E2EA9A /* AcActualFlightResponse.swift */; };
+		B9E22B2326EDA36000E2EA9A /* ActualFlightResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A4E26EDA1CD00E2EA9A /* ActualFlightResponse.swift */; };
+		B9E22B2426EDA36000E2EA9A /* AcUnitTypeTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A4D26EDA1CD00E2EA9A /* AcUnitTypeTransactionRequest.swift */; };
+		B9E22B2526EDA36000E2EA9A /* ACUnitTypeTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E22A4A26EDA1CD00E2EA9A /* ACUnitTypeTransactionResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B91EE53C26EBAE090005B295 /* TTBaseModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTBaseModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91EE53F26EBAE090005B295 /* TTBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTBaseModel.h; sourceTree = "<group>"; };
 		B91EE54026EBAE090005B295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B91EE54726EBAE3F0005B295 /* BaseModels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BaseModels; sourceTree = "<group>"; };
 		B91EE54826EBAE3F0005B295 /* Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Libraries; sourceTree = "<group>"; };
+		B9E22A4926EDA1CD00E2EA9A /* AcActualFlightResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcActualFlightResponse.swift; sourceTree = "<group>"; };
+		B9E22A4A26EDA1CD00E2EA9A /* ACUnitTypeTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACUnitTypeTransactionResponse.swift; sourceTree = "<group>"; };
+		B9E22A4B26EDA1CD00E2EA9A /* AcUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcUnit.swift; sourceTree = "<group>"; };
+		B9E22A4C26EDA1CD00E2EA9A /* AcUnitTypeTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcUnitTypeTransaction.swift; sourceTree = "<group>"; };
+		B9E22A4D26EDA1CD00E2EA9A /* AcUnitTypeTransactionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcUnitTypeTransactionRequest.swift; sourceTree = "<group>"; };
+		B9E22A4E26EDA1CD00E2EA9A /* ActualFlightResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualFlightResponse.swift; sourceTree = "<group>"; };
+		B9E22A5026EDA1E100E2EA9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B9E22A5126EDA1E100E2EA9A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B9E22A5226EDA1E100E2EA9A /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		B9E22A5326EDA1E100E2EA9A /* APIGatewayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGatewayService.swift; sourceTree = "<group>"; };
+		B9E22A5526EDA1E700E2EA9A /* SlotListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotListResponse.swift; sourceTree = "<group>"; };
+		B9E22A5626EDA1E700E2EA9A /* DepartmanListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmanListResponse.swift; sourceTree = "<group>"; };
+		B9E22A5726EDA1E700E2EA9A /* PlannedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannedItem.swift; sourceTree = "<group>"; };
+		B9E22A5826EDA1E700E2EA9A /* AcRosterDocPathResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcRosterDocPathResponse.swift; sourceTree = "<group>"; };
+		B9E22A5926EDA1E700E2EA9A /* RosterSegmentTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterSegmentTypes.swift; sourceTree = "<group>"; };
+		B9E22A5A26EDA1E700E2EA9A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B9E22A5B26EDA1E700E2EA9A /* RosterRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterRequestType.swift; sourceTree = "<group>"; };
+		B9E22A5C26EDA1E700E2EA9A /* ProgressStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStatus.swift; sourceTree = "<group>"; };
+		B9E22A5D26EDA1E700E2EA9A /* SegmentsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentsResponse.swift; sourceTree = "<group>"; };
+		B9E22A5F26EDA1E700E2EA9A /* ResponseUserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseUserLogin.swift; sourceTree = "<group>"; };
+		B9E22A6026EDA1E700E2EA9A /* UMSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMSModel.swift; sourceTree = "<group>"; };
+		B9E22A6126EDA1E700E2EA9A /* UserAuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthRequest.swift; sourceTree = "<group>"; };
+		B9E22A6226EDA1E700E2EA9A /* RequestUserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUserLogin.swift; sourceTree = "<group>"; };
+		B9E22A6326EDA1E700E2EA9A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B9E22A6426EDA1E700E2EA9A /* ProfilePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhoto.swift; sourceTree = "<group>"; };
+		B9E22A6526EDA1E700E2EA9A /* UserAuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthResponse.swift; sourceTree = "<group>"; };
+		B9E22A6726EDA1E700E2EA9A /* WoTaskcardCoreResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoTaskcardCoreResponse.swift; sourceTree = "<group>"; };
+		B9E22A6826EDA1E700E2EA9A /* WorkAccompRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkAccompRequest.swift; sourceTree = "<group>"; };
+		B9E22A6926EDA1E700E2EA9A /* NRTCRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRTCRequest.swift; sourceTree = "<group>"; };
+		B9E22A6A26EDA1E700E2EA9A /* WoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoResponse.swift; sourceTree = "<group>"; };
+		B9E22A6B26EDA1E700E2EA9A /* ManHourRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManHourRequest.swift; sourceTree = "<group>"; };
+		B9E22A6C26EDA1E700E2EA9A /* ManHourResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManHourResponse.swift; sourceTree = "<group>"; };
+		B9E22A6D26EDA1E700E2EA9A /* WorkOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderResponse.swift; sourceTree = "<group>"; };
+		B9E22A6E26EDA1E700E2EA9A /* WorkAccompResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkAccompResponse.swift; sourceTree = "<group>"; };
+		B9E22A6F26EDA1E700E2EA9A /* WoTaskCardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoTaskCardResponse.swift; sourceTree = "<group>"; };
+		B9E22A7226EDA1E700E2EA9A /* AirCraftResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCraftResponse.swift; sourceTree = "<group>"; };
+		B9E22A7326EDA1E700E2EA9A /* ACResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACResponse.swift; sourceTree = "<group>"; };
+		B9E22A7426EDA1E700E2EA9A /* AcMasterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcMasterResponse.swift; sourceTree = "<group>"; };
+		B9E22A7526EDA1E700E2EA9A /* AcMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcMaster.swift; sourceTree = "<group>"; };
+		B9E22A7726EDA1E700E2EA9A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B9E22A7826EDA1E700E2EA9A /* ChapterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterResponse.swift; sourceTree = "<group>"; };
+		B9E22A7926EDA1E700E2EA9A /* TranCodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranCodeResponse.swift; sourceTree = "<group>"; };
+		B9E22A7A26EDA1E700E2EA9A /* SectionResponseN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionResponseN.swift; sourceTree = "<group>"; };
+		B9E22A7B26EDA1E700E2EA9A /* SkillResponseN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillResponseN.swift; sourceTree = "<group>"; };
+		B9E22A7C26EDA1E700E2EA9A /* TranCodeResponseN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranCodeResponseN.swift; sourceTree = "<group>"; };
+		B9E22A7D26EDA1E700E2EA9A /* SkillResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillResponse.swift; sourceTree = "<group>"; };
+		B9E22A7E26EDA1E700E2EA9A /* SectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionResponse.swift; sourceTree = "<group>"; };
+		B9E22A7F26EDA1E700E2EA9A /* ChapterResponseN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterResponseN.swift; sourceTree = "<group>"; };
+		B9E22A8026EDA1E700E2EA9A /* LocationResponseRem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponseRem.swift; sourceTree = "<group>"; };
+		B9E22A8126EDA1E700E2EA9A /* TranCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranCode.swift; sourceTree = "<group>"; };
+		B9E22A8226EDA1E700E2EA9A /* WorkAreaResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkAreaResponseModel.swift; sourceTree = "<group>"; };
+		B9E22A8326EDA1E700E2EA9A /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		B9E22A8426EDA1E700E2EA9A /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
+		B9E22A8526EDA1E700E2EA9A /* DeviceToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceToken.swift; sourceTree = "<group>"; };
+		B9E22A8626EDA1E700E2EA9A /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		B9E22A8726EDA1E700E2EA9A /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		B9E22A8926EDA1E700E2EA9A /* EmployeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeResponse.swift; sourceTree = "<group>"; };
+		B9E22A8A26EDA1E700E2EA9A /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		B9E22A8B26EDA1E700E2EA9A /* EmployeeResponseN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeResponseN.swift; sourceTree = "<group>"; };
+		B9E22A8D26EDA1E700E2EA9A /* Defect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defect.swift; sourceTree = "<group>"; };
+		B9E22A8E26EDA1E700E2EA9A /* CdrmPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CdrmPart.swift; sourceTree = "<group>"; };
+		B9E22A8F26EDA1E700E2EA9A /* DefectMelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectMelResponse.swift; sourceTree = "<group>"; };
+		B9E22A9026EDA1E700E2EA9A /* CdrmBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CdrmBase.swift; sourceTree = "<group>"; };
+		B9E22A9126EDA1E700E2EA9A /* DefectReportTroubleShootingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectReportTroubleShootingResponse.swift; sourceTree = "<group>"; };
+		B9E22A9226EDA1E700E2EA9A /* CdrmPartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CdrmPartResponse.swift; sourceTree = "<group>"; };
+		B9E22A9326EDA1E700E2EA9A /* DefectReportPn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectReportPn.swift; sourceTree = "<group>"; };
+		B9E22A9426EDA1E700E2EA9A /* CdrmPartDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CdrmPartDescription.swift; sourceTree = "<group>"; };
+		B9E22A9526EDA1E700E2EA9A /* DefectReportPnResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectReportPnResponse.swift; sourceTree = "<group>"; };
+		B9E22A9626EDA1E700E2EA9A /* DefectCategoryCdrmConfigResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectCategoryCdrmConfigResponse.swift; sourceTree = "<group>"; };
+		B9E22A9726EDA1E700E2EA9A /* DefectReportListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectReportListResponse.swift; sourceTree = "<group>"; };
+		B9E22A9826EDA1E700E2EA9A /* DefectsAndMels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectsAndMels.swift; sourceTree = "<group>"; };
+		B9E22A9926EDA1E700E2EA9A /* CdrmLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CdrmLocation.swift; sourceTree = "<group>"; };
+		B9E22A9A26EDA1E700E2EA9A /* CdrmLocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CdrmLocationResponse.swift; sourceTree = "<group>"; };
+		B9E22A9B26EDA1E700E2EA9A /* DefectCategoryCdrmConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectCategoryCdrmConfig.swift; sourceTree = "<group>"; };
+		B9E22A9C26EDA1E700E2EA9A /* DefectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectResponse.swift; sourceTree = "<group>"; };
+		B9E22A9D26EDA1E700E2EA9A /* DefectReportTroubleShooting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectReportTroubleShooting.swift; sourceTree = "<group>"; };
+		B9E22A9E26EDA1E700E2EA9A /* CdrmDecriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CdrmDecriptionResponse.swift; sourceTree = "<group>"; };
+		B9E22A9F26EDA1E700E2EA9A /* DefectMel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefectMel.swift; sourceTree = "<group>"; };
+		B9E22AA126EDA1E800E2EA9A /* SegmentsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentsRequest.swift; sourceTree = "<group>"; };
+		B9E22AA226EDA1E800E2EA9A /* SegmentItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentItemRequest.swift; sourceTree = "<group>"; };
+		B9E22AA326EDA1E800E2EA9A /* SmallRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRequest.swift; sourceTree = "<group>"; };
+		B9E22AA426EDA1E800E2EA9A /* CreateOrStartRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrStartRequest.swift; sourceTree = "<group>"; };
+		B9E22AA526EDA1E800E2EA9A /* SmallRequestNV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRequestNV.swift; sourceTree = "<group>"; };
+		B9E22AA726EDA1E800E2EA9A /* InventoryControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryControl.swift; sourceTree = "<group>"; };
+		B9E22AA826EDA1E800E2EA9A /* InventoryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetail.swift; sourceTree = "<group>"; };
+		B9E22AA926EDA1E800E2EA9A /* InventorySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySummary.swift; sourceTree = "<group>"; };
+		B9E22AAA26EDA1E800E2EA9A /* PnMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PnMaster.swift; sourceTree = "<group>"; };
+		B9E22AAC26EDA1E800E2EA9A /* ResponseCheckVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCheckVersion.swift; sourceTree = "<group>"; };
+		B9E22AAD26EDA1E800E2EA9A /* CheckVersionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckVersionRequest.swift; sourceTree = "<group>"; };
+		B9E22AAF26EDA1E800E2EA9A /* DTSArchiveRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSArchiveRequestModel.swift; sourceTree = "<group>"; };
+		B9E22AB026EDA1E800E2EA9A /* DTSWorkOrderStampCountsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSWorkOrderStampCountsResponseModel.swift; sourceTree = "<group>"; };
+		B9E22AB126EDA1E800E2EA9A /* DTSCustomerWoResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSCustomerWoResponseModel.swift; sourceTree = "<group>"; };
+		B9E22AB226EDA1E800E2EA9A /* DTSSmsCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSSmsCodeModel.swift; sourceTree = "<group>"; };
+		B9E22AB326EDA1E800E2EA9A /* DTSArchiveResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSArchiveResponseModel.swift; sourceTree = "<group>"; };
+		B9E22AB426EDA1E800E2EA9A /* DTSPdfRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSPdfRequestModel.swift; sourceTree = "<group>"; };
+		B9E22AB526EDA1E800E2EA9A /* DTSPdfResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSPdfResponseModel.swift; sourceTree = "<group>"; };
+		B9E22AB626EDA1E800E2EA9A /* DTSTaskCardListResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSTaskCardListResponseModel.swift; sourceTree = "<group>"; };
+		B9E22AB726EDA1E800E2EA9A /* DTSTaskCardStampRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSTaskCardStampRequestModel.swift; sourceTree = "<group>"; };
+		B9E22AB826EDA1E800E2EA9A /* DTSTaskCardListRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTSTaskCardListRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +246,198 @@
 		B91EE53E26EBAE090005B295 /* TTBaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				B91EE54726EBAE3F0005B295 /* BaseModels */,
 				B91EE54826EBAE3F0005B295 /* Libraries */,
 				B91EE53F26EBAE090005B295 /* TTBaseModel.h */,
 				B91EE54026EBAE090005B295 /* Info.plist */,
+				B9E22B2626EDA36B00E2EA9A /* AcUnit */,
+				B9E22B1F26EDA35000E2EA9A /* Base */,
+				B9E22B1A26EDA33C00E2EA9A /* WorkOrder */,
+				B9E22B1026EDA31F00E2EA9A /* Roster */,
+				B9E22B0626EDA2FD00E2EA9A /* Others */,
+				B9E22AED26EDA2D100E2EA9A /* Main */,
+				B9E22AE726EDA2B700E2EA9A /* Login */,
+				B9E22ADF26EDA28B00E2EA9A /* Inventory */,
+				B9E22ADA26EDA27300E2EA9A /* DigitalTallySheet */,
+				B9E22ABB26EDA21F00E2EA9A /* CheckVersion */,
+				B9E22ACF26EDA23B00E2EA9A /* Defect */,
 			);
 			path = TTBaseModel;
+			sourceTree = "<group>";
+		};
+		B9E22ABB26EDA21F00E2EA9A /* CheckVersion */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22AAC26EDA1E800E2EA9A /* ResponseCheckVersion.swift */,
+				B9E22AAD26EDA1E800E2EA9A /* CheckVersionRequest.swift */,
+			);
+			name = CheckVersion;
+			sourceTree = "<group>";
+		};
+		B9E22ACF26EDA23B00E2EA9A /* Defect */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22A8E26EDA1E700E2EA9A /* CdrmPart.swift */,
+				B9E22A8D26EDA1E700E2EA9A /* Defect.swift */,
+				B9E22A8F26EDA1E700E2EA9A /* DefectMelResponse.swift */,
+				B9E22A9026EDA1E700E2EA9A /* CdrmBase.swift */,
+				B9E22A9126EDA1E700E2EA9A /* DefectReportTroubleShootingResponse.swift */,
+				B9E22A9226EDA1E700E2EA9A /* CdrmPartResponse.swift */,
+				B9E22A9326EDA1E700E2EA9A /* DefectReportPn.swift */,
+				B9E22A9426EDA1E700E2EA9A /* CdrmPartDescription.swift */,
+				B9E22A9526EDA1E700E2EA9A /* DefectReportPnResponse.swift */,
+				B9E22A9626EDA1E700E2EA9A /* DefectCategoryCdrmConfigResponse.swift */,
+				B9E22A9726EDA1E700E2EA9A /* DefectReportListResponse.swift */,
+				B9E22A9826EDA1E700E2EA9A /* DefectsAndMels.swift */,
+				B9E22A9926EDA1E700E2EA9A /* CdrmLocation.swift */,
+				B9E22A9A26EDA1E700E2EA9A /* CdrmLocationResponse.swift */,
+				B9E22A9B26EDA1E700E2EA9A /* DefectCategoryCdrmConfig.swift */,
+				B9E22A9C26EDA1E700E2EA9A /* DefectResponse.swift */,
+				B9E22A9D26EDA1E700E2EA9A /* DefectReportTroubleShooting.swift */,
+				B9E22A9E26EDA1E700E2EA9A /* CdrmDecriptionResponse.swift */,
+				B9E22A9F26EDA1E700E2EA9A /* DefectMel.swift */,
+			);
+			name = Defect;
+			sourceTree = "<group>";
+		};
+		B9E22ADA26EDA27300E2EA9A /* DigitalTallySheet */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22AAF26EDA1E800E2EA9A /* DTSArchiveRequestModel.swift */,
+				B9E22AB026EDA1E800E2EA9A /* DTSWorkOrderStampCountsResponseModel.swift */,
+				B9E22AB126EDA1E800E2EA9A /* DTSCustomerWoResponseModel.swift */,
+				B9E22AB226EDA1E800E2EA9A /* DTSSmsCodeModel.swift */,
+				B9E22AB326EDA1E800E2EA9A /* DTSArchiveResponseModel.swift */,
+				B9E22AB426EDA1E800E2EA9A /* DTSPdfRequestModel.swift */,
+				B9E22AB526EDA1E800E2EA9A /* DTSPdfResponseModel.swift */,
+				B9E22AB626EDA1E800E2EA9A /* DTSTaskCardListResponseModel.swift */,
+				B9E22AB726EDA1E800E2EA9A /* DTSTaskCardStampRequestModel.swift */,
+				B9E22AB826EDA1E800E2EA9A /* DTSTaskCardListRequestModel.swift */,
+			);
+			name = DigitalTallySheet;
+			sourceTree = "<group>";
+		};
+		B9E22ADF26EDA28B00E2EA9A /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22AA726EDA1E800E2EA9A /* InventoryControl.swift */,
+				B9E22AA826EDA1E800E2EA9A /* InventoryDetail.swift */,
+				B9E22AA926EDA1E800E2EA9A /* InventorySummary.swift */,
+				B9E22AAA26EDA1E800E2EA9A /* PnMaster.swift */,
+			);
+			name = Inventory;
+			sourceTree = "<group>";
+		};
+		B9E22AE726EDA2B700E2EA9A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22A5F26EDA1E700E2EA9A /* ResponseUserLogin.swift */,
+				B9E22A6026EDA1E700E2EA9A /* UMSModel.swift */,
+				B9E22A6126EDA1E700E2EA9A /* UserAuthRequest.swift */,
+				B9E22A6226EDA1E700E2EA9A /* RequestUserLogin.swift */,
+				B9E22A6326EDA1E700E2EA9A /* UserModel.swift */,
+				B9E22A6426EDA1E700E2EA9A /* ProfilePhoto.swift */,
+				B9E22A6526EDA1E700E2EA9A /* UserAuthResponse.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		B9E22AED26EDA2D100E2EA9A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22AA126EDA1E800E2EA9A /* SegmentsRequest.swift */,
+				B9E22AA226EDA1E800E2EA9A /* SegmentItemRequest.swift */,
+				B9E22AA326EDA1E800E2EA9A /* SmallRequest.swift */,
+				B9E22AA426EDA1E800E2EA9A /* CreateOrStartRequest.swift */,
+				B9E22AA526EDA1E800E2EA9A /* SmallRequestNV.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B9E22B0626EDA2FD00E2EA9A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22A7726EDA1E700E2EA9A /* Location.swift */,
+				B9E22A7826EDA1E700E2EA9A /* ChapterResponse.swift */,
+				B9E22A7926EDA1E700E2EA9A /* TranCodeResponse.swift */,
+				B9E22A7A26EDA1E700E2EA9A /* SectionResponseN.swift */,
+				B9E22A7B26EDA1E700E2EA9A /* SkillResponseN.swift */,
+				B9E22A7C26EDA1E700E2EA9A /* TranCodeResponseN.swift */,
+				B9E22A7D26EDA1E700E2EA9A /* SkillResponse.swift */,
+				B9E22A7E26EDA1E700E2EA9A /* SectionResponse.swift */,
+				B9E22A7F26EDA1E700E2EA9A /* ChapterResponseN.swift */,
+				B9E22A8026EDA1E700E2EA9A /* LocationResponseRem.swift */,
+				B9E22A8126EDA1E700E2EA9A /* TranCode.swift */,
+				B9E22A8226EDA1E700E2EA9A /* WorkAreaResponseModel.swift */,
+				B9E22A8326EDA1E700E2EA9A /* Section.swift */,
+				B9E22A8426EDA1E700E2EA9A /* LocationResponse.swift */,
+				B9E22A7226EDA1E700E2EA9A /* AirCraftResponse.swift */,
+				B9E22A7326EDA1E700E2EA9A /* ACResponse.swift */,
+				B9E22A7426EDA1E700E2EA9A /* AcMasterResponse.swift */,
+				B9E22A8926EDA1E700E2EA9A /* EmployeeResponse.swift */,
+				B9E22A8A26EDA1E700E2EA9A /* Employee.swift */,
+				B9E22A8B26EDA1E700E2EA9A /* EmployeeResponseN.swift */,
+				B9E22A7526EDA1E700E2EA9A /* AcMaster.swift */,
+				B9E22A8526EDA1E700E2EA9A /* DeviceToken.swift */,
+				B9E22A8626EDA1E700E2EA9A /* Chapter.swift */,
+				B9E22A8726EDA1E700E2EA9A /* Skill.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		B9E22B1026EDA31F00E2EA9A /* Roster */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22A5526EDA1E700E2EA9A /* SlotListResponse.swift */,
+				B9E22A5626EDA1E700E2EA9A /* DepartmanListResponse.swift */,
+				B9E22A5726EDA1E700E2EA9A /* PlannedItem.swift */,
+				B9E22A5826EDA1E700E2EA9A /* AcRosterDocPathResponse.swift */,
+				B9E22A5926EDA1E700E2EA9A /* RosterSegmentTypes.swift */,
+				B9E22A5A26EDA1E700E2EA9A /* Item.swift */,
+				B9E22A5B26EDA1E700E2EA9A /* RosterRequestType.swift */,
+				B9E22A5C26EDA1E700E2EA9A /* ProgressStatus.swift */,
+				B9E22A5D26EDA1E700E2EA9A /* SegmentsResponse.swift */,
+			);
+			name = Roster;
+			sourceTree = "<group>";
+		};
+		B9E22B1A26EDA33C00E2EA9A /* WorkOrder */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22A6726EDA1E700E2EA9A /* WoTaskcardCoreResponse.swift */,
+				B9E22A6826EDA1E700E2EA9A /* WorkAccompRequest.swift */,
+				B9E22A6926EDA1E700E2EA9A /* NRTCRequest.swift */,
+				B9E22A6A26EDA1E700E2EA9A /* WoResponse.swift */,
+				B9E22A6B26EDA1E700E2EA9A /* ManHourRequest.swift */,
+				B9E22A6C26EDA1E700E2EA9A /* ManHourResponse.swift */,
+				B9E22A6D26EDA1E700E2EA9A /* WorkOrderResponse.swift */,
+				B9E22A6E26EDA1E700E2EA9A /* WorkAccompResponse.swift */,
+				B9E22A6F26EDA1E700E2EA9A /* WoTaskCardResponse.swift */,
+			);
+			name = WorkOrder;
+			sourceTree = "<group>";
+		};
+		B9E22B1F26EDA35000E2EA9A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22A5026EDA1E100E2EA9A /* Constants.swift */,
+				B9E22A5126EDA1E100E2EA9A /* BaseViewModel.swift */,
+				B9E22A5226EDA1E100E2EA9A /* BaseModel.swift */,
+				B9E22A5326EDA1E100E2EA9A /* APIGatewayService.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		B9E22B2626EDA36B00E2EA9A /* AcUnit */ = {
+			isa = PBXGroup;
+			children = (
+				B9E22A4926EDA1CD00E2EA9A /* AcActualFlightResponse.swift */,
+				B9E22A4A26EDA1CD00E2EA9A /* ACUnitTypeTransactionResponse.swift */,
+				B9E22A4B26EDA1CD00E2EA9A /* AcUnit.swift */,
+				B9E22A4C26EDA1CD00E2EA9A /* AcUnitTypeTransaction.swift */,
+				B9E22A4D26EDA1CD00E2EA9A /* AcUnitTypeTransactionRequest.swift */,
+				B9E22A4E26EDA1CD00E2EA9A /* ActualFlightResponse.swift */,
+			);
+			name = AcUnit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +509,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B91EE54A26EBAE3F0005B295 /* Libraries in Resources */,
-				B91EE54926EBAE3F0005B295 /* BaseModels in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +519,105 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E22B0D26EDA31800E2EA9A /* SlotListResponse.swift in Sources */,
+				B9E22AF526EDA2EB00E2EA9A /* TranCodeResponse.swift in Sources */,
+				B9E22B2226EDA36000E2EA9A /* AcActualFlightResponse.swift in Sources */,
+				B9E22AF426EDA2EB00E2EA9A /* SkillResponse.swift in Sources */,
+				B9E22AB926EDA20E00E2EA9A /* ResponseCheckVersion.swift in Sources */,
+				B9E22B0426EDA2F200E2EA9A /* Employee.swift in Sources */,
+				B9E22AE926EDA2C600E2EA9A /* CreateOrStartRequest.swift in Sources */,
+				B9E22ABA26EDA20E00E2EA9A /* CheckVersionRequest.swift in Sources */,
+				B9E22AD826EDA26100E2EA9A /* DTSTaskCardListRequestModel.swift in Sources */,
+				B9E22B0026EDA2EF00E2EA9A /* ACResponse.swift in Sources */,
+				B9E22AC926EDA22F00E2EA9A /* DefectReportTroubleShootingResponse.swift in Sources */,
+				B9E22AD126EDA26100E2EA9A /* DTSPdfRequestModel.swift in Sources */,
+				B9E22B2426EDA36000E2EA9A /* AcUnitTypeTransactionRequest.swift in Sources */,
+				B9E22AF226EDA2EB00E2EA9A /* ChapterResponse.swift in Sources */,
+				B9E22AC526EDA22F00E2EA9A /* CdrmPart.swift in Sources */,
+				B9E22AD626EDA26100E2EA9A /* DTSPdfResponseModel.swift in Sources */,
+				B9E22AEA26EDA2C600E2EA9A /* SmallRequestNV.swift in Sources */,
+				B9E22ACA26EDA22F00E2EA9A /* Defect.swift in Sources */,
+				B9E22AD226EDA26100E2EA9A /* DTSArchiveRequestModel.swift in Sources */,
+				B9E22ADC26EDA28700E2EA9A /* InventorySummary.swift in Sources */,
+				B9E22AE326EDA2AC00E2EA9A /* UMSModel.swift in Sources */,
+				B9E22AFD26EDA2EB00E2EA9A /* TranCodeResponseN.swift in Sources */,
+				B9E22ACC26EDA22F00E2EA9A /* CdrmDecriptionResponse.swift in Sources */,
+				B9E22AFE26EDA2EB00E2EA9A /* WorkAreaResponseModel.swift in Sources */,
+				B9E22B0B26EDA31800E2EA9A /* DepartmanListResponse.swift in Sources */,
+				B9E22ACE26EDA22F00E2EA9A /* DefectReportTroubleShooting.swift in Sources */,
+				B9E22B1226EDA33000E2EA9A /* WorkAccompResponse.swift in Sources */,
+				B9E22B0C26EDA31800E2EA9A /* AcRosterDocPathResponse.swift in Sources */,
+				B9E22AE226EDA2AC00E2EA9A /* ProfilePhoto.swift in Sources */,
+				B9E22B1E26EDA34B00E2EA9A /* BaseModel.swift in Sources */,
+				B9E22B2326EDA36000E2EA9A /* ActualFlightResponse.swift in Sources */,
+				B9E22ABC26EDA22F00E2EA9A /* CdrmPartDescription.swift in Sources */,
+				B9E22B2026EDA36000E2EA9A /* AcUnit.swift in Sources */,
+				B9E22AE526EDA2AC00E2EA9A /* RequestUserLogin.swift in Sources */,
+				B9E22AD326EDA26100E2EA9A /* DTSWorkOrderStampCountsResponseModel.swift in Sources */,
+				B9E22AD426EDA26100E2EA9A /* DTSTaskCardListResponseModel.swift in Sources */,
+				B9E22AD026EDA26100E2EA9A /* DTSCustomerWoResponseModel.swift in Sources */,
+				B9E22B0726EDA31800E2EA9A /* Item.swift in Sources */,
+				B9E22B1526EDA33000E2EA9A /* ManHourResponse.swift in Sources */,
+				B9E22AEE26EDA2EB00E2EA9A /* Skill.swift in Sources */,
+				B9E22AFA26EDA2EB00E2EA9A /* ChapterResponseN.swift in Sources */,
+				B9E22AF126EDA2EB00E2EA9A /* Location.swift in Sources */,
+				B9E22B1726EDA33000E2EA9A /* WorkOrderResponse.swift in Sources */,
+				B9E22B0826EDA31800E2EA9A /* ProgressStatus.swift in Sources */,
+				B9E22B0A26EDA31800E2EA9A /* RosterRequestType.swift in Sources */,
+				B9E22AC426EDA22F00E2EA9A /* DefectReportPn.swift in Sources */,
+				B9E22B1B26EDA34A00E2EA9A /* BaseViewModel.swift in Sources */,
+				B9E22B2526EDA36000E2EA9A /* ACUnitTypeTransactionResponse.swift in Sources */,
+				B9E22AF926EDA2EB00E2EA9A /* DeviceToken.swift in Sources */,
+				B9E22ABE26EDA22F00E2EA9A /* CdrmLocationResponse.swift in Sources */,
+				B9E22AF326EDA2EB00E2EA9A /* TranCode.swift in Sources */,
+				B9E22B1126EDA33000E2EA9A /* ManHourRequest.swift in Sources */,
+				B9E22B1C26EDA34B00E2EA9A /* Constants.swift in Sources */,
+				B9E22B1826EDA33000E2EA9A /* WoTaskCardResponse.swift in Sources */,
+				B9E22AFB26EDA2EB00E2EA9A /* SkillResponseN.swift in Sources */,
+				B9E22B1926EDA33000E2EA9A /* NRTCRequest.swift in Sources */,
+				B9E22AFC26EDA2EB00E2EA9A /* SectionResponse.swift in Sources */,
+				B9E22AD926EDA26100E2EA9A /* DTSSmsCodeModel.swift in Sources */,
+				B9E22AD526EDA26100E2EA9A /* DTSArchiveResponseModel.swift in Sources */,
+				B9E22B0F26EDA31800E2EA9A /* PlannedItem.swift in Sources */,
+				B9E22ADB26EDA28700E2EA9A /* PnMaster.swift in Sources */,
+				B9E22B1D26EDA34B00E2EA9A /* APIGatewayService.swift in Sources */,
+				B9E22B0526EDA2F200E2EA9A /* EmployeeResponse.swift in Sources */,
+				B9E22AF626EDA2EB00E2EA9A /* LocationResponseRem.swift in Sources */,
+				B9E22AFF26EDA2EF00E2EA9A /* AcMasterResponse.swift in Sources */,
+				B9E22AC726EDA22F00E2EA9A /* CdrmLocation.swift in Sources */,
+				B9E22ABD26EDA22F00E2EA9A /* DefectReportPnResponse.swift in Sources */,
+				B9E22AC326EDA22F00E2EA9A /* DefectReportListResponse.swift in Sources */,
+				B9E22ADE26EDA28700E2EA9A /* InventoryControl.swift in Sources */,
+				B9E22AC226EDA22F00E2EA9A /* DefectMel.swift in Sources */,
+				B9E22AE626EDA2AC00E2EA9A /* ResponseUserLogin.swift in Sources */,
+				B9E22B0326EDA2F200E2EA9A /* EmployeeResponseN.swift in Sources */,
+				B9E22AC826EDA22F00E2EA9A /* CdrmBase.swift in Sources */,
+				B9E22ACB26EDA22F00E2EA9A /* DefectResponse.swift in Sources */,
+				B9E22ADD26EDA28700E2EA9A /* InventoryDetail.swift in Sources */,
+				B9E22AE826EDA2C600E2EA9A /* SegmentsRequest.swift in Sources */,
+				B9E22AF826EDA2EB00E2EA9A /* Chapter.swift in Sources */,
+				B9E22AC626EDA22F00E2EA9A /* DefectsAndMels.swift in Sources */,
+				B9E22B1626EDA33000E2EA9A /* WoResponse.swift in Sources */,
+				B9E22B0E26EDA31800E2EA9A /* SegmentsResponse.swift in Sources */,
+				B9E22B0226EDA2EF00E2EA9A /* AcMaster.swift in Sources */,
+				B9E22AEF26EDA2EB00E2EA9A /* Section.swift in Sources */,
+				B9E22B0926EDA31800E2EA9A /* RosterSegmentTypes.swift in Sources */,
+				B9E22B1426EDA33000E2EA9A /* WorkAccompRequest.swift in Sources */,
+				B9E22AC026EDA22F00E2EA9A /* CdrmPartResponse.swift in Sources */,
+				B9E22AEC26EDA2C600E2EA9A /* SegmentItemRequest.swift in Sources */,
+				B9E22AF026EDA2EB00E2EA9A /* LocationResponse.swift in Sources */,
+				B9E22AC126EDA22F00E2EA9A /* DefectCategoryCdrmConfig.swift in Sources */,
+				B9E22AE426EDA2AC00E2EA9A /* UserAuthRequest.swift in Sources */,
+				B9E22AF726EDA2EB00E2EA9A /* SectionResponseN.swift in Sources */,
+				B9E22AE126EDA2AC00E2EA9A /* UserAuthResponse.swift in Sources */,
+				B9E22AD726EDA26100E2EA9A /* DTSTaskCardStampRequestModel.swift in Sources */,
+				B9E22ACD26EDA22F00E2EA9A /* DefectMelResponse.swift in Sources */,
+				B9E22AE026EDA2AC00E2EA9A /* UserModel.swift in Sources */,
+				B9E22B0126EDA2EF00E2EA9A /* AirCraftResponse.swift in Sources */,
+				B9E22ABF26EDA22F00E2EA9A /* DefectCategoryCdrmConfigResponse.swift in Sources */,
+				B9E22B1326EDA33000E2EA9A /* WoTaskcardCoreResponse.swift in Sources */,
+				B9E22B2126EDA36000E2EA9A /* AcUnitTypeTransaction.swift in Sources */,
+				B9E22AEB26EDA2C600E2EA9A /* SmallRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +762,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thy.TTBaseModel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,10 +788,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thy.TTBaseModel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
