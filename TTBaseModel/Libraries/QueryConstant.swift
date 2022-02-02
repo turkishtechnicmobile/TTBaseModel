@@ -30,12 +30,23 @@ open class QueryConstant {
     
     public class func apiBaseUrl(isCore: Bool, withPath: String) -> String {
         return apiBaseUrl(for: currentProject(isCore: isCore)) + withPath
+       // return apiBaseUrlWithLocal(for: currentProject(isCore: isCore)) + withPath
     }
     
     class func apiBaseUrl(for project: Project) -> String {
         if project.isCore {
             let testProd = isBeta ? "test" : ""
             return mainUrl + "/\(project.rawValue)\(testProd)"
+        }
+        
+        let testProd = isBeta ? "test" : "prod"
+        return mainUrl + "/\(testProd)/api"
+    }
+    
+    class func apiBaseUrlWithLocal(for project: Project) -> String {
+        
+        if project.isCore {
+            return "http://127.0.0.1:5080"
         }
         
         let testProd = isBeta ? "test" : "prod"

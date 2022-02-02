@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'TTBaseModel'
-  spec.version      = '0.0.2'
+  spec.version      = '0.0.3'
   spec.authors      = { 
     'Hasan KACAR' => 'hasankacar@thy.com'
   }
@@ -20,5 +20,5 @@ spec.summary      = 'Base application frameworks for Turkish Technic\'s Applicat
   spec.ios.deployment_target = '11.0'
   
   spec.dependency 'ObjectMapper', '~> 4.2.0'
-  spec.dependency 'TTBaseApp'
+  spec.dependency 'TTBaseApp', '~> 0.0.4'
 end
